@@ -23,29 +23,26 @@
 
 // export default App;
 
-
-
-
-import React from 'react'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Properties from './components/Properties'
+import React from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Properties from "./components/Properties";
 
 const App = () => {
   return (
     <div>
-          <About />
-          <Contact />
-          
-          <Header />
-          <Hero />
-          <Properties />
-          <Footer />
-    </div>
-  )
-}
+      <Header />
+      <About />
+      <Contact />
 
-export default App
+      <Hero />
+      <Properties />
+      <Footer />
+    </div>
+  );
+};
+
+export default App;

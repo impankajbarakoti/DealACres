@@ -1,17 +1,24 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./pages/Home";
+import Home from "./Pages/Home";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Profile from "./pages/Profile";
-import EditProfile from "./pages/EditProfile";
-import CreateBlog from "./pages/CreateBlog";
-import EditBlog from "./pages/EditBlog";
-import SingleBlog from "./pages/SingleBlog";
-import BlogsPage from "./pages/BlogsPage"; // this will show all blog activities
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+import Profile from "./Pages/Profile";
+import EditProfile from "./Pages/EditProfile";
+import CreateBlog from "./Pages/CreateBlog";
+import EditBlog from "./Pages/EditBlog";
+import SingleBlog from "./Pages/SingleBlog";
+// this will show all blog activities
+
+
+
+
+
+
+
+
 
 function App() {
   return (
@@ -21,11 +28,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<BlogsPage />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/edit-profile" element={<EditProfile />} />
-        <Route path="/create-blog" element={<CreateBlog />} />
+        <Route path="/edit-profile" element={<EditProfile/>} />
+        <Route path="/create-blog" element={<CreateBlog/>} />
         <Route path="/edit-blog/:id" element={<EditBlog />} />
         <Route path="/blog/:id" element={<SingleBlog />} />
       </Routes>

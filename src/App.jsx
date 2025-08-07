@@ -37,12 +37,11 @@ const App = () => {
       <Header />
       <About />
       <Contact />
-
       <Hero />
       <Properties />
       <Footer />
     </div>
-  );
+  ); 
 };
 
 export default App;

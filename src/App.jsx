@@ -1,44 +1,51 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./Pages/Home";
-import About from "./components/About";
-import Login from "./Pages/Login";
-import Register from "./Pages/Register";
-import Profile from "./Pages/Profile";
-import EditProfile from "./Pages/EditProfile";
-import CreateBlog from "./Pages/CreateBlog";
-import EditBlog from "./Pages/EditBlog";
-import SingleBlog from "./Pages/SingleBlog";
-// this will show all blog activities
-//wertyui
+// import React from "react";
+// import Navbar from "./components/Navbar";
+// import HeroSection from "./components/HeroSection";
+// import Services from "./components/Services";
+// import WhyChooseUs from "./components/WhyChooseUs";
+// import Testimonials from "./components/Testimonials";
+// import ContactForm from "./components/ContactForm";
+// import Footer from "./components/Footer";
+
+// const App = () => {
+//   return (
+//     <div className="font-sans">
+//       <Navbar />
+//       <HeroSection />
+//       <Services />
+//       <WhyChooseUs />
+//       <Testimonials />
+//       <ContactForm />
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default App;
 
 
 
 
+import React from 'react'
+import About from './components/About'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Properties from './components/Properties'
 
-
-
-
-
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blogs" element={<BlogsPage />} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/edit-profile" element={<EditProfile/>} />
-        <Route path="/create-blog" element={<CreateBlog/>} />
-        <Route path="/edit-blog/:id" element={<EditBlog />} />
-        <Route path="/blog/:id" element={<SingleBlog />} />
-      </Routes>
-    </Router>
-  );
+    <div>
+          <About />
+          <Contact />
+          
+          <Header />
+          <Hero />
+          <Properties />
+          <Footer />
+    </div>
+  )
 }
 
-export default App;
+export default App
